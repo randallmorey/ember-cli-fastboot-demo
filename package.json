@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "ember fasboot --environment=production",
     "test": "ember test"
   },
   "repository": "",
