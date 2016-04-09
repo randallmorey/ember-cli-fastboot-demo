@@ -10,6 +10,7 @@
 
 # misc
 /.sass-cache
+/async-disk-cache
 /connect.lock
 /coverage/*
 /libpeerconnection.log
