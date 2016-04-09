@@ -11,7 +11,7 @@
     "preinstall": "npm install -g ember-cli@2.4.3 bower",
     "postinstall": "bower install",
     "build": "ember build",
-    "start": "ember fasboot --environment=production",
+    "start": "ember fastboot --environment=production",
     "test": "ember test"
   },
   "repository": "",
