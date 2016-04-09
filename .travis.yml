@@ -3,20 +3,19 @@ language: node_js
 node_js:
   - "4"
 
-sudo: false
+sudo: required
+
+services:
+  - docker
 
 cache:
   directories:
     - node_modules
-
-before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
+    - bower_components
 
 install:
-  - npm install
-  - bower install
+  - docker-compose run --rm npm install
+  - docker-compose run --rm bower install
 
 script:
-  - npm test
+  - docker-compose run --rm npm test
