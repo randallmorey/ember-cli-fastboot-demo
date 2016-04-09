@@ -6,6 +6,13 @@ ember: &defaults
   ports:
     - 4200:4200
     - 49152:49152
+fastboot:
+  <<: *defaults
+  command: ['fastboot', '--serve-assets']
+  volumes:
+    - .:/ember-cli-app
+  ports:
+    - 3000:3000
 npm:
   <<: *defaults
   entrypoint: ['/usr/bin/npm']
