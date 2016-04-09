@@ -8,9 +8,11 @@
     "test": "tests"
   },
   "scripts": {
+    "preinstall": "npm install -g ember bower",
     "build": "ember build",
     "start": "ember fasboot --environment=production",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "bower install"
   },
   "repository": "",
   "engines": {
