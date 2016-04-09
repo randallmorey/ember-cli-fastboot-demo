@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-      prepend: 'https://subdomain.cloudfront.net/'
+      prepend: 'http://ember-cli-fastboot-demo-dev.s3-website-us-east-1.amazonaws.com/'
     }
   });
 
