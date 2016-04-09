@@ -8,11 +8,11 @@
     "test": "tests"
   },
   "scripts": {
-    "preinstall": "npm install -g ember bower",
+    "preinstall": "npm install -g ember@2.4.3 bower",
+    "postinstall": "bower install",
     "build": "ember build",
     "start": "ember fasboot --environment=production",
-    "test": "ember test",
-    "postinstall": "bower install"
+    "test": "ember test"
   },
   "repository": "",
   "engines": {
@@ -20,7 +20,7 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.4.3",
