@@ -9,8 +9,8 @@
   },
   "scripts": {
     "preinstall": "npm install -g ember-cli@2.4.3 bower",
-    "postinstall": "bower install",
-    "build": "ember build",
+    "postinstall": "bower install && npm build",
+    "build": "ember build --environment=production",
     "start": "ember fastboot --serve-assets --environment=production --port=$PORT",
     "test": "ember test"
   },
