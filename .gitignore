@@ -15,5 +15,6 @@
 /coverage/*
 /fastboot-dist
 /libpeerconnection.log
+.env
 npm-debug.log
 testem.log
