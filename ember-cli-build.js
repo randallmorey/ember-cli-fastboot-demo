@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-      //prepend: 'https://s3.amazonaws.com/ember-cli-fastboot-demo-dev/'
+      prepend: 'https://s3.amazonaws.com/ember-cli-fastboot-demo-dev/'
     }
   });
 
