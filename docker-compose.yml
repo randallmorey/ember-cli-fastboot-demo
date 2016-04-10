@@ -8,7 +8,7 @@ ember: &defaults
     - 49152:49152
 fastboot:
   <<: *defaults
-  command: ['fastboot', '--serve-assets', '--environment=production']
+  command: ['fastboot', '--serve-assets']
   volumes:
     - .:/ember-cli-app
   ports:
