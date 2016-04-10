@@ -15,6 +15,7 @@
 /coverage/*
 /fastboot-dist
 /libpeerconnection.log
+.DS_Store
 .env
 npm-debug.log
 testem.log
