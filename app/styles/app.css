@@ -1,3 +1,7 @@
 body {
   color: #EEE;
-  background-color: #333; }
+  background-color: #333;
+}
+a {
+  color: #DDF;
+}
